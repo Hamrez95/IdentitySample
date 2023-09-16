@@ -1,7 +1,7 @@
 ﻿using IdentitySample.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace IdentitySample.Models.AppDbContext
+namespace IdentitySample.Models.ApplicationDbContext
 {
     public class AppDbContext : DbContext
     {
