@@ -1,3 +1,5 @@
+using IdentitySample.Models.ApplicationDbContext;
+
 namespace IdentitySample
 {
     public class Program
@@ -8,6 +10,7 @@ namespace IdentitySample
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<AppDbContext>();
 
             var app = builder.Build();
 
