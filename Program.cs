@@ -1,4 +1,5 @@
 using IdentitySample.Models.ApplicationDbContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace IdentitySample
 {
@@ -10,6 +11,10 @@ namespace IdentitySample
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
             builder.Services.AddDbContext<AppDbContext>();
 
             var app = builder.Build();

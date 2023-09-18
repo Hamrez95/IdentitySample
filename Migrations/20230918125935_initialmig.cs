@@ -5,7 +5,7 @@
 namespace IdentitySample.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialDb : Migration
+    public partial class initialmig : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
